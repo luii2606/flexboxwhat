@@ -7,6 +7,7 @@
 :root{
   --verde: green;
   --gris:#666;
+  --grisclaro:#f0eded;
   --negro:#000;
   --blanco:hsl(0, 0%, 100%);
   
@@ -115,6 +116,10 @@ i{
   border-bottom: 1px solid var(--gris);
  cursor: pointer;
 }
+.Chat__contenedor:hover{
+ background-color: var(--grisclaro);
+ cursor: pointer;
+}
 
 .fotos {
   width: 50px;
@@ -193,36 +198,40 @@ i{
   display: flex;
   width: 100%;
   align-items: center;
-  padding: 3px;
+  padding: 5px 9px; 
   border-bottom: 1px solid var(--gris);
+  cursor: pointer;
+}
+.contenedor__status:hover{
+ background-color: var(--grisclaro);
  cursor: pointer;
 }
+
 p{ font-size: 14px;
   color: var(--gris);}
 
 .status__foto{
-  width: 50px;
+   width: 50px;
   height: 50px;
-  border-radius: 100px ;
+  border-radius: 100px;
   margin-right: 10px;
-   margin: 5px;
 }
-.status__foto--activos{
+.status__foto--activos {
   width: 50px;
   height: 50px;
-  border-radius: 100px ;
+  border-radius: 100px;
   margin-right: 10px;
   border: 3px solid var(--verde);
-   margin: 5px;
 }
-.status__foto--inactivos{
+
+.status__foto--inactivos {
   width: 50px;
   height: 50px;
-  border-radius: 100px ;
+  border-radius: 100px;
   margin-right: 10px;
   border: 3px solid var(--gris);
-   margin: 5px;
 }
+
  /* CALLS */
  .contenedor__calls{
    /* display: flex;
@@ -234,6 +243,10 @@ p{ font-size: 14px;
   align-items: center;
   padding: 9px;
   border-bottom: 1px solid var(--gris);
+ cursor: pointer;
+}
+.contenedor__calls:hover{
+ background-color: var(--grisclaro);
  cursor: pointer;
 }
  
@@ -285,6 +298,9 @@ p{ font-size: 14px;
     opacity: 1;
     visibility: visible;
     transform:scale(1);
+}
+#barra__itemschats,#barra__itemsstatus,#barra__itemscalls{
+  display:none;
 }
 
  
